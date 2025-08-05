@@ -1,0 +1,409 @@
+/* * element sets whole page*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: serif, Georgia, sans-serif;
+    background: #f9f9f9;
+}
+/*Whole navbar arrangement*/
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    height: 100px;
+    background-color: #f9f9f9;
+    color:#1e1e1e;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.1);
+}
+/* heading style*/
+.heading h1{
+    font-size: 35px;
+    color: #1e1e1e;
+    margin: 0px;
+    transition: all 0.8s ease-in-out;
+    text-shadow: -3px 3px 10px #1e1e1e;
+    cursor: pointer;
+}
+.heading h1:hover{
+    color: #0077cc;
+    transform: scale(1.05) rotate(-1deg);
+    text-shadow: 0 0 10px #00b894;
+    font-family: 'Pacifico', cursive;/*fancy font*/
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+/* navbar list items styling*/
+.navbarlist{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+/*styling individual links in navbar*/
+.navbarlist li a{
+    font-size: 20px;
+    color: #1e1e1e;
+    text-decoration: none;
+    text-shadow: 0 0 10px #00b894;
+}
+/* hover effect for links in navbarlist*/
+.navbarlist li:hover a{
+    color: #0077cc;
+}
+/*list elements styling*/
+.bar a{
+    color: #1e1e1e;
+    text-decoration: none;
+}
+/*hamburger style for mobile screen devices*/
+.hamburger{
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+}
+.about_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    gap: 90px;
+    background-color: #f9f9f9;
+    color: #1e1e1e;
+}
+.about-image img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-left: 30px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.caption{
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 10px;
+    margin-left: 40px;
+    color: #1e1e1e;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-shadow: 0 0 8px #00f0ff80;
+    margin-inline: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #00b894;
+    width: 0ch;
+    animation: typing 4s steps(32, end) 5s infinite alternate, blink 0.7s step-end infinite;
+
+}
+.about-description {
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-right: 30px;
+  }
+  .about-description h2{
+    font-size: 60px;
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 5px;
+  }
+
+/*typewriter effect functions definitions*/
+@keyframes typing{
+    from {
+        width: 0;
+    }
+    to {
+        width: 32ch;
+    }
+}
+@keyframes blink{
+    50%{
+        border-color: transparent;
+    }
+}
+
+/*Education section*/
+.education_section{
+    padding: 60px 20px;
+    color: #1e1e1e;
+    background-color: #f9f9f9;
+}
+.ed_title{
+    font-size: 60px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    color:#1e1e1e;
+    text-shadow: 0 0 8px #00f0ff;
+}
+.ed_card{
+    background-color:  #ffffff;
+    border-left: 5px solid #00b894;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.ed_card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 18px ;
+    cursor: pointer
+  }
+.ed_institute{
+    font-weight: bold;
+    color: #1e1e1e;
+}
+.ed_dura{
+    font-style: italic;
+    color: #1e1e1e;
+    margin-bottom: 10px;
+}
+.ed_desc{
+    color: #1e1e1e;
+    line-height: 1.6;
+}
+/*Projects section*/
+.projects_section{
+    padding: 60px 30px;
+    background-color: #f9f9f9;
+    color: #1e1e1e;
+    text-align: center;
+}
+.projects_section h2{
+    font-size: 60px;
+    margin-bottom: 40px;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-shadow: 0 0 8px #00f0ff;
+}
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+.project-card{
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #1e1e1e;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.project-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 240 255, 0.4);
+}
+.project-card img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.project-card h3{
+    margin-bottom: 10px;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+.project-card p{
+    font-size: 16px;
+    line-height: 1.4;
+    transition: color 0.3s;
+}
+.project-card h3:hover {
+    color: #0077cc;
+}
+/*Certifications section*/
+.certs-section{
+    text-align: center;
+    color: #1e1e1e;
+    background-color: #f9f9f9;
+    padding: 60px 30px; 
+}
+.certs-section h2{
+    font-size: 60px;
+    margin-bottom: 40px;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-shadow: 0 0 8px #00f0ff;
+}
+.certs-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+.certs-card{
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #1e1e1e;
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: riseup 0.5s ease-out forwards;
+    will-change: transform;
+}
+.certs-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 240 255, 0.4);
+    cursor: pointer;
+    opacity: 1;
+    animation: none;
+}
+@keyframes riseup {
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.certs-card img{
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto 15px;
+    border-radius: 10px;
+}
+.certs-card h3{
+    margin-bottom: 10px;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.certs-card h3:hover {
+    color: #0077cc;
+}
+.certs-card p{
+    font-size: 16px;
+    line-height: 1.4;
+    transition: color 0.3s;
+}
+
+/*Contact section styling*/
+.contact-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 30px;
+    background-color: #f9f9f9;
+    color: #1e1e1e;
+    flex-wrap: wrap;
+}
+.contact-item{
+    display: flex;
+    gap: 15px;
+    text-decoration: none;
+    color: #1e1e1e;
+    font-size: 30px;
+    padding: 12px 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.contact-item i{
+    font-size: 50px;
+    color: #1e1e1e;
+    transition: color 0.3s ease;
+
+}
+.contact-item:hover{
+    transform: scale(1.05);
+    color: #0077cc;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.contact-item:hover i {
+    color: #00b894;
+}
+
+footer{
+    font-size: 25px;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    color: #1e1e1e;
+    border-top: 5px solid rgba(0, 0, 0, 0.1);
+}
+/*mobile responsiveness*/
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .navbarlist {
+        position: absolute;
+        top: 100px;  /*Below the navbar*/ 
+        left: 0;
+        right: 0;
+        background-color: #1a1a1a;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 20px 0;
+        z-index: 999;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navbarlist.show {
+        display: flex;
+    }
+
+    .navbarlist li a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .heading h1 {
+        font-size: 1.3rem;
+    }
+
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .bar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+
+/*
+Light Professional Palette Suggestion:
+Background: #f9f9f9 (soft off-white)
+
+Text: #1e1e1e (deep gray)
+
+Primary Accent: #0077cc (modern blue)  links, headings,
+
+Secondary Accent: #00b894 (teal green) hover effects
+
+Borders/Shadow: rgba(0, 0, 0, 0.1)
+
+Card Background: #ffffff (pure white)
+*/
