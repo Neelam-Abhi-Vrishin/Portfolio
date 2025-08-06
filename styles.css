@@ -227,25 +227,32 @@ body{
     color: #0077cc;
 }
 .project-link {
-    background-color: #4CAF50; /* Modern green */
-    color: white;
+    background-color: #4CAF50;
     border: none;
-    padding: 12px 24px;
-    text-align: center;
-    text-decoration: none;
-    display: block; /* Makes buttons stack vertically */
-    width: 200px; /* Fixed width */
-    margin: 10px auto; /* Centered with vertical spacing */
-    font-size: 16px;
+    padding: 0; /* Remove default button padding */
+    margin: 10px auto;
+    width: 200px;
     border-radius: 6px;
-    cursor: pointer; /* Ensures pointer appears on button */
-    transition: all 0.3s ease; /* Smooth hover transition */
+    cursor: pointer;
+    overflow: hidden; /* Contains the link inside button */
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+  }
+
+  .button-text {
+    color: white;
+    text-decoration: none;
+    display: block; /* Makes entire button area clickable */
+    padding: 12px 24px; /* Moves padding to the link */
+    font-size: 16px;
+  }
+  .button-text:hover{
+    color:#100055;
   }
 
   .project-link:hover {
-    background-color: #45a049; /* Darker green */
-    transform: translateY(-2px); /* Slight lift effect */
+    background-color: #45a049;
+    transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   }
 
@@ -253,7 +260,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px; /* Space between stacked buttons */
+    gap: 10px;
     margin-top: 20px;
   }
 /*Certifications section*/
