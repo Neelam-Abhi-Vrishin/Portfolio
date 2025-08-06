@@ -226,14 +226,36 @@ body{
 .project-card h3:hover {
     color: #0077cc;
 }
-.project-link{
-    background-color: #bde0e2;
-    margin: 20px;
-    font-size: 20px;
-}
-.project-link :hover{
-    background-color:#0e99fc;
-}
+.project-link {
+    background-color: #4CAF50; /* Modern green */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: block; /* Makes buttons stack vertically */
+    width: 200px; /* Fixed width */
+    margin: 10px auto; /* Centered with vertical spacing */
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer; /* Ensures pointer appears on button */
+    transition: all 0.3s ease; /* Smooth hover transition */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+
+  .project-link:hover {
+    background-color: #45a049; /* Darker green */
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Space between stacked buttons */
+    margin-top: 20px;
+  }
 /*Certifications section*/
 .certs-section{
     text-align: center;
