@@ -229,39 +229,42 @@ body{
 .project-link {
     background-color: #4CAF50;
     border: none;
-    padding: 0; /* Remove default button padding */
+    padding: 0;
     margin: 10px auto;
     width: 200px;
     border-radius: 6px;
     cursor: pointer;
-    overflow: hidden; /* Contains the link inside button */
+    overflow: hidden;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     transition: all 0.3s ease;
   }
 
+  /* Link text - critical fixes */
   .button-text {
-    color: white;
-    text-decoration: none;
-    display: block; /* Makes entire button area clickable */
-    padding: 12px 24px; /* Moves padding to the link */
+    color: white !important; /* Force color */
+    text-decoration: none !important; /* No underline */
+    display: block;
+    padding: 12px 24px;
     font-size: 16px;
   }
-  .button-text:hover{
-    color:#100055;
+  .button-text:hover {
+  color: #1900ff !important; /* Keep text white on hover */
+}
+.project-link:hover .button-text {
+  color: #1900ff !important;
+}
+  /* Kill all link states */
+  .button-text:visited,
+  .button-text:active {
+    color: white !important;
+    text-decoration: none !important;
   }
 
+  /* Hover effects */
   .project-link:hover {
     background-color: #45a049;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  }
-
-  .button-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-top: 20px;
   }
 /*Certifications section*/
 .certs-section{
