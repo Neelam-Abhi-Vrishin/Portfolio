@@ -227,9 +227,8 @@ body{
     color: #0077cc;
 }
 .project-link{
-    background-color: #00f0ff;
-    margin-top: 20px;
-    margin-right: 20px;
+    background-color: #bde0e2;
+    margin: 20px;
     font-size: 20px;
 }
 .project-link :hover{
