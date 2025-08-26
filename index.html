@@ -18,7 +18,9 @@
 
         <div class="bar">
           <div class="hamburger" id="hamburger">
-            ☰
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
             <ul class="navbarlist">
                 <li><a href="#about-me">ABOUT</a></li>
@@ -28,8 +30,19 @@
                 <li><a href="#projects">PROJECTS</a></li>
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
-        </div>        
-    </nav>
+        </div> 
+      </nav>
+      <script src="">
+        document.addEventListener("DOMContentLoaded", () => {
+          const hamburger = document.getElementById("hamburger");
+          const navLinks = document.querySelector(".navbarlist");
+
+          hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+           navLinks.classList.toggle("show");
+  });
+});
+      </script>       
     
     <section id="about-me" class="about_section">
       <div class="left-column">
@@ -177,13 +190,5 @@
     <footer>
       <p>&copy; 2025 Abhi Vrishin Neelam. All Rights Reserved.</p>
   </footer>
-
-<!--    <script>
-      const hamburger = document.getElementById("hamburger");
-      const navbarlist =  document.querySelector('.navbarlist');
-      hamburger.addEventListener('click', ()=>{
-        navbarlist.classList.toggle('show');
-      });
-    </script>-->
   </body>
 </html>
