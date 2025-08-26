@@ -267,18 +267,53 @@ body{
 
 /*Skills section*/
 .skills-section{
-    text-align: center;
-    color: #1e1e1e;
+    padding: 60px 30px;
     background-color: #f9f9f9;
-    padding: 60px 30px; 
+    color: #1e1e1e;
+    text-align: center;
 }
-
 .skills-section h2{
     font-size: 60px;
     margin-bottom: 40px;
     text-decoration: underline;
     text-decoration-thickness: 4px;
     text-shadow: 0 0 8px #00f0ff;
+}
+.skills-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+.skills-card{
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #1e1e1e;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.skills-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 240 255, 0.4);
+}
+.skills--card img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.skills-card h3{
+    margin-bottom: 10px;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+.skills-card p{
+    font-size: 16px;
+    line-height: 1.4;
+    transition: color 0.3s;
+}
+.skills-card h3:hover {
+    color: #0077cc;
 }
 
 /*Projects section*/
