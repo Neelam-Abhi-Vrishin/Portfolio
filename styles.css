@@ -536,6 +536,49 @@ footer{
         color: #0077cc; /* Matches your hover accent */
     }
 }
+@media (hover: none) and (pointer: coarse) {
+    /* Certifications */
+    .certs-card:hover {
+        transform: none !important;
+        box-shadow: none !important;
+    }
+
+    /* Project cards */
+    .project-card:hover {
+        transform: none !important;
+        box-shadow: none !important;
+    }
+
+    /* Education cards */
+    .ed_card:hover {
+        transform: none !important;
+        box-shadow: none !important;
+    }
+
+    /* Contact buttons */
+    .contact-item:hover {
+        transform: none !important;
+        box-shadow: none !important;
+        color: inherit !important;
+    }
+
+    /* Navbar links */
+    .navbarlist li:hover a {
+        color: inherit !important;
+    }
+}
+
+/* === TAP FEEDBACK FOR TOUCH DEVICES === */
+@media (hover: none) and (pointer: coarse) {
+    .certs-card:active,
+    .project-card:active,
+    .ed_card:active,
+    .contact-item:active {
+        transform: scale(0.97);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+}
 
 /*
 Light Professional Palette Suggestion:
